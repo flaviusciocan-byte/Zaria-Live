@@ -2,9 +2,8 @@ export default function handler(req, res) {
   res.status(200).json({
     system: "ZARIA-Live",
     version: {
-      number: "1.0.0",
-      codename: "AURORA",
-      stable: true
+      current: "1.0.0",
+      release: "stable"
     },
     timestamp: new Date().toISOString()
   });
