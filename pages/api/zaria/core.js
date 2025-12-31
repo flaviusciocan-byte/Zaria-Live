@@ -2,10 +2,12 @@ export default function handler(req, res) {
   res.status(200).json({
     system: "ZARIA-Live",
     core: {
-      orchestrator: "active",
-      api: "active",
-      agents: "active"
+      essence: "modularity",
+      orchestration: "agent-based",
+      philosophy: "clarity, autonomy, legacy",
+      uptime_seconds: process.uptime()
     },
     timestamp: new Date().toISOString()
   });
 }
+
