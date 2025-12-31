@@ -17,16 +17,20 @@ export default function ZariaNav() {
         <span style={{ cursor: "pointer" }}>📜 Manifest</span>
       </Link>
 
-      <Link href="/api/zaria/health">
-        <span style={{ cursor: "pointer" }}>💠 Health</span>
-      </Link>
-
       <Link href="/ui/manifest/layers">
         <span style={{ cursor: "pointer" }}>🔱 Straturi</span>
       </Link>
 
       <Link href="/ui/manifest/codex">
         <span style={{ cursor: "pointer" }}>📘 Codexuri</span>
+      </Link>
+
+      <Link href="/ui/manifest/totality">
+        <span style={{ cursor: "pointer" }}>🌕 Totalitate</span>
+      </Link>
+
+      <Link href="/api/zaria/health">
+        <span style={{ cursor: "pointer" }}>💠 Health</span>
       </Link>
 
       <Link href="/">
