@@ -2,15 +2,11 @@ export default function handler(req, res) {
   res.status(200).json({
     system: "ZARIA-Live",
     details: {
-      name: "ZARIA-Live",
-      description: "Sistem modular de orchestrare inteligentă.",
+      name: "ZARIA",
+      type: "orchestrator",
       version: "1.0.0",
-      author: "Flavius Ciocan",
-      components: {
-        api: "active",
-        orchestrator: "active",
-        agents: "active"
-      }
+      environment: process.env.NODE_ENV || "unknown",
+      uptime_seconds: process.uptime()
     },
     timestamp: new Date().toISOString()
   });
