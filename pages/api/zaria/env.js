@@ -3,8 +3,7 @@ export default function handler(req, res) {
     system: "ZARIA-Live",
     environment: {
       node_env: process.env.NODE_ENV || "unknown",
-      region: process.env.VERCEL_REGION || "local",
-      runtime: process.env.VERCEL_ENV || "local"
+      vercel_env: process.env.VERCEL_ENV || "unknown"
     },
     timestamp: new Date().toISOString()
   });
