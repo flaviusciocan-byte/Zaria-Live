@@ -1,17 +1,13 @@
 export default function handler(req, res) {
   res.status(200).json({
     system: "ZARIA-Live",
-    components: {
-      core: {
-        orchestrator: "online",
-        api: "online"
-      },
-      agents: {
-        count: 1,
-        status: "active"
-      }
+    identity: {
+      name: "ZARIA",
+      type: "orchestrator",
+      mode: "autonom",
+      version: "1.0.0"
     },
-    version: "1.0.0",
+    status: "online",
     timestamp: new Date().toISOString()
   });
 }
