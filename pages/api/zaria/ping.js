@@ -1,7 +1,7 @@
 export default function handler(req, res) {
   res.status(200).json({
-    ping: "pong",
     system: "ZARIA-Live",
+    ping: "pong",
     timestamp: new Date().toISOString()
   });
 }
