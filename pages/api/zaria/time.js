@@ -1,8 +1,9 @@
 export default function handler(req, res) {
-  const now = new Date().toISOString();
-
   res.status(200).json({
     system: "ZARIA-Live",
-    time: now
+    time: {
+      iso: new Date().toISOString(),
+      epoch: Date.now()
+    }
   });
 }
