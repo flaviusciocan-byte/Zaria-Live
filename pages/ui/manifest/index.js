@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import ZariaLayout from "../../../components/layouts/ZariaLayout";
 
 export default function ManifestHome() {
   const [manifest, setManifest] = useState(null);
