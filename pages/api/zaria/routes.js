@@ -3,14 +3,18 @@ export default function handler(req, res) {
     system: "ZARIA-Live",
     routes: [
       "/api/zaria",
-      "/api/zaria/orchestrator",
-      "/api/zaria/agents",
-      "/api/zaria/agents/ping",
-      "/api/zaria/agents/list",
+      "/api/zaria/info",
       "/api/zaria/status",
+      "/api/zaria/health",
+      "/api/zaria/state",
       "/api/zaria/time",
-      "/api/zaria/ping",
-      "/api/zaria/version"
-    ]
+      "/api/zaria/uptime",
+      "/api/zaria/map",
+      "/api/zaria/version",
+      "/api/zaria/system",
+      "/api/zaria/agents",
+      "/api/zaria/orchestrator"
+    ],
+    timestamp: new Date().toISOString()
   });
 }
