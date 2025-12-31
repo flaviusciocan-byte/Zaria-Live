@@ -3,11 +3,11 @@ export default function handler(req, res) {
     system: "ZARIA-Live",
     summary: {
       status: "online",
+      healthy: true,
       version: "1.0.0",
-      components: {
-        core: "active",
-        agents: "active"
-      }
+      agents: "active",
+      orchestrator: "active",
+      uptime_seconds: process.uptime()
     },
     timestamp: new Date().toISOString()
   });
