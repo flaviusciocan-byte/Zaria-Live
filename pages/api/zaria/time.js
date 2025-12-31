@@ -3,7 +3,8 @@ export default function handler(req, res) {
     system: "ZARIA-Live",
     time: {
       iso: new Date().toISOString(),
-      epoch: Date.now()
-    }
+      locale: new Date().toLocaleString()
+    },
+    timestamp: new Date().toISOString()
   });
 }
