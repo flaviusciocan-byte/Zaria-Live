@@ -2,10 +2,9 @@ export default function handler(req, res) {
   res.status(200).json({
     system: "ZARIA-Live",
     info: {
-      name: "ZARIA-Live",
+      name: "ZARIA",
       version: "1.0.0",
-      status: "online",
-      description: "Sistem modular de orchestrare inteligentă."
+      description: "Modular orchestrator for creators and systems"
     },
     timestamp: new Date().toISOString()
   });
