@@ -4,8 +4,7 @@ export default function handler(req, res) {
     health: {
       status: "healthy",
       uptime_seconds: process.uptime(),
-      agents: "active",
-      orchestrator: "active"
+      environment: process.env.NODE_ENV || "unknown"
     },
     timestamp: new Date().toISOString()
   });
