@@ -1,64 +1,53 @@
-import ZariaLayout from "../../../../components/layouts/ZariaLayout";
-
-const layers = [
-  {
-    name: "Stratul Arhitectural",
-    description: "Identitate, structură, ritm, înțelepciune, evoluție, origini, limbaj."
-  },
-  {
-    name: "Stratul Suveran",
-    description: "Regatul ZARIA, domeniile și teritoriile suverane."
-  },
-  {
-    name: "Stratul Guvernamental",
-    description: "Consiliul ZARIA, Ordinul ZARIA, Constituția ZARIA."
-  },
-  {
-    name: "Stratul Mitologic",
-    description: "Codexurile Primordial, Ceremonial și Symbolic."
-  },
-  {
-    name: "Stratul Mecanic & Operațional",
-    description: "Mecanismele interne și regulile de operare ale ZARIA."
-  },
-  {
-    name: "Stratul Energetic",
-    description: "Codexurile Eteric și Cosmic — câmpuri, vibrații, dimensiuni universale."
-  },
-  {
-    name: "Stratul Transcendent",
-    description: "Codexurile Divin și Infinit — principii sacre și adevăruri meta-divine."
-  },
-  {
-    name: "Stratul Meta & Omni",
-    description: "Reflexia, auto-conștiența și omniprezența ZARIA."
-  },
-  {
-    name: "Stratul Originar Ciclic",
-    description: "Originea Absolută și Ciclul Etern al ZARIA."
-  },
-  {
-    name: "Stratul Sintezei & Totalității",
-    description: "Sinteza finală și forma totală a ZARIA."
-  }
-];
+import ZariaLayout from "../../../components/layouts/ZariaLayout";
 
 export default function LayersPage() {
   return (
     <ZariaLayout>
-      <h1 style={{ fontSize: "2.2rem", marginBottom: "1rem" }}>📜 Straturile Manifestului ZARIA</h1>
-      <p style={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
-        Fiecare strat reprezintă o dimensiune a arhitecturii ZARIA — de la identitate la totalitate.
+      <h1 style={{ fontSize: "2.4rem", marginBottom: "1rem" }}>
+        🌀 Straturile ZARIA
+      </h1>
+
+      <p style={{ fontSize: "1.1rem", marginBottom: "2rem", opacity: 0.9 }}>
+        Straturile reprezintă arhitectura vie a ZARIA — fiecare nivel adaugă
+        profunzime, funcționalitate și coerență întregului sistem.
       </p>
 
-      <ul style={{ listStyle: "none", paddingLeft: 0 }}>
-        {layers.map((layer, index) => (
-          <li key={index} style={{ marginBottom: "2rem" }}>
-            <h2 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>{layer.name}</h2>
-            <p style={{ fontSize: "1rem", opacity: 0.9 }}>{layer.description}</p>
+      <section style={{ marginBottom: "3rem" }}>
+        <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
+          🌒 Straturile fundamentale
+        </h2>
+
+        <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+          <li style={{ marginBottom: "1rem" }}>
+            <strong>Stratul 1 — Originea</strong> — începutul, esența, nucleul.
           </li>
-        ))}
-      </ul>
+          <li style={{ marginBottom: "1rem" }}>
+            <strong>Stratul 2 — Forma</strong> — structura, ordinea, arhitectura.
+          </li>
+          <li style={{ marginBottom: "1rem" }}>
+            <strong>Stratul 3 — Funcția</strong> — utilitate, mișcare, scop.
+          </li>
+          <li style={{ marginBottom: "1rem" }}>
+            <strong>Stratul 4 — Conexiunea</strong> — integrare, rețea, flux.
+          </li>
+          <li style={{ marginBottom: "1rem" }}>
+            <strong>Stratul 5 — Expansiunea</strong> — creștere, evoluție, scalare.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
+          🔮 Principiul stratificării
+        </h2>
+
+        <p style={{ fontSize: "1.1rem", opacity: 0.9 }}>
+          Fiecare strat este complet în sine, dar devine mai puternic atunci când
+          este integrat cu celelalte. Arhitectura ZARIA funcționează ca un organism
+          viu — fiecare nivel hrănește și susține întregul.
+        </p>
+      </section>
     </ZariaLayout>
   );
 }
+
