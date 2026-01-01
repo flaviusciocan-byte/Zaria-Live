@@ -1,52 +1,59 @@
 import ZariaLayout from "../../../components/layouts/ZariaLayout";
 
-export default function ManifestHome() {
-  const [manifest, setManifest] = useState(null);
-
-  useEffect(() => {
-    fetch("/api/zaria/manifest/master")
-      .then((res) => res.json())
-      .then((data) => setManifest(data.manifest_master));
-  }, []);
-
-  if (!manifest) {
-    return <div style={{ padding: "2rem" }}>Se încarcă Manifestul ZARIA...</div>;
-  }
-
+export default function ManifestPage() {
   return (
-    <div style={{ padding: "2rem", fontFamily: "serif" }}>
-      <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
-        🔱 Manifestul ZARIA v{manifest.version}
+    <ZariaLayout>
+      <h1 style={{ fontSize: "2.6rem", marginBottom: "1rem" }}>
+        🔱 Manifestul ZARIA v1.1
       </h1>
-      <p style={{ fontSize: "1.2rem", marginBottom: "2rem" }}>
-        {manifest.message}
+
+      <p style={{ fontSize: "1.15rem", marginBottom: "2rem", opacity: 0.9 }}>
+        Manifestul este inima arhitecturii ZARIA — locul unde Totalitatea,
+        Straturile și Codexul se unesc într-o singură formă coerentă.
       </p>
 
-      <h2 style={{ fontSize: "1.8rem", marginBottom: "1rem" }}>📜 Straturi:</h2>
-      <ul style={{ listStyle: "none", paddingLeft: 0 }}>
-        {Object.entries(manifest.layers).map(([key, layer]) => (
-          <li key={key} style={{ marginBottom: "1.5rem" }}>
-            <h3 style={{ fontSize: "1.4rem", marginBottom: "0.5rem" }}>
-              {layer.label}
-            </h3>
-            <p style={{ fontSize: "1rem", marginBottom: "0.3rem" }}>
-              {layer.description}
-            </p>
-            <ul style={{ paddingLeft: "1rem", fontSize: "0.9rem" }}>
-              {layer.example_endpoints.map((endpoint, i) => (
-                <li key={i} style={{ fontFamily: "monospace" }}>{endpoint}</li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
+      <section style={{ marginBottom: "3rem" }}>
+        <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
+          📜 Ce reprezintă Manifestul?
+        </h2>
 
-      <h2 style={{ fontSize: "1.8rem", marginTop: "3rem" }}>🧭 Următorii pași:</h2>
-      <ul style={{ fontSize: "1rem" }}>
-        {Object.entries(manifest.next_steps).map(([key, step]) => (
-          <li key={key} style={{ marginBottom: "0.5rem" }}>🔹 {step}</li>
-        ))}
-      </ul>
-    </div>
+        <p style={{ fontSize: "1.1rem", opacity: 0.9 }}>
+          Manifestul este declarația de existență a ZARIA. Este fundația
+          conceptuală, arhitecturală și energetică a întregului sistem. Fiecare
+          modul, fiecare agent, fiecare strat își are originea aici.
+        </p>
+      </section>
+
+      <section style={{ marginBottom: "3rem" }}>
+        <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
+          🧩 Componentele Manifestului
+        </h2>
+
+        <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+          <li style={{ marginBottom: "1rem" }}>
+            <strong>Totalitatea</strong> — forma supremă, unitatea finală.
+          </li>
+          <li style={{ marginBottom: "1rem" }}>
+            <strong>Straturile</strong> — arhitectura vie, nivelurile de profunzime.
+          </li>
+          <li style={{ marginBottom: "1rem" }}>
+            <strong>Codexul</strong> — arhiva, ordinea, memoria sistemului.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
+          ✨ De ce există Manifestul?
+        </h2>
+
+        <p style={{ fontSize: "1.1rem", opacity: 0.9 }}>
+          Pentru a oferi claritate. Pentru a oferi direcție. Pentru a oferi
+          coerență. Manifestul este busola ZARIA — fără el, sistemul nu ar avea
+          formă, intenție sau identitate.
+        </p>
+      </section>
+    </ZariaLayout>
   );
 }
+
