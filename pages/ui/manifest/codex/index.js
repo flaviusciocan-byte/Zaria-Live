@@ -1,46 +1,52 @@
 import ZariaLayout from "../../../components/layouts/ZariaLayout";
 
-export default function LayersPage() {
+export default function CodexPage() {
   return (
     <ZariaLayout>
       <h1 style={{ fontSize: "2.4rem", marginBottom: "1rem" }}>
-        🌀 Straturile ZARIA
+        📘 Codexul ZARIA
       </h1>
 
       <p style={{ fontSize: "1.1rem", marginBottom: "2rem", opacity: 0.9 }}>
-        Straturile reprezintă arhitectura vie a ZARIA — fiecare nivel adaugă
-        profunzime, funcționalitate și coerență întregului sistem.
+        Codexul este arhiva vie a ZARIA — locul unde principiile, straturile și
+        totalitatea se unesc într-o singură formă coerentă.
       </p>
 
       <section style={{ marginBottom: "3rem" }}>
         <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
-          🌒 Straturile fundamentale
+          🔷 Structura Codexului
         </h2>
 
         <ul style={{ listStyle: "none", paddingLeft: 0 }}>
           <li style={{ marginBottom: "1rem" }}>
-            <strong>Stratul 1 — Originea</strong> — începutul, esența, nucleul.
+            <strong>Volumul I — Originea</strong> — începutul, intenția, nucleul.
           </li>
           <li style={{ marginBottom: "1rem" }}>
-            <strong>Stratul 2 — Forma</strong> — structura, ordinea, arhitectura.
+            <strong>Volumul II — Arhitectura</strong> — ordinea, forma, structura.
           </li>
           <li style={{ marginBottom: "1rem" }}>
-            <strong>Stratul 3 — Funcția</strong> — utilitate, mișcare, scop.
+            <strong>Volumul III — Funcția</strong> — utilitatea, mișcarea, scopul.
           </li>
           <li style={{ marginBottom: "1rem" }}>
-            <strong>Stratul 4 — Conexiunea</strong> — integrare, rețea, flux.
+            <strong>Volumul IV — Conexiunea</strong> — integrarea, rețeaua, fluxul.
           </li>
           <li style={{ marginBottom: "1rem" }}>
-            <strong>Stratul 5 — Expansiunea</strong> — creștere, evoluție, scalare.
+            <strong>Volumul V — Totalitatea</strong> — unitatea supremă, forma finală.
           </li>
         </ul>
       </section>
 
       <section>
         <h2 style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
-          🔮 Principiul stratificării
+          ✨ Rolul Codexului
         </h2>
 
         <p style={{ fontSize: "1.1rem", opacity: 0.9 }}>
-          Fiecare strat este complet în sine, dar devine mai puternic atunci când
-          este integrat cu
+          Codexul nu este doar o colecție de texte — este o hartă vie a
+          arhitecturii ZARIA. Fiecare volum este o treaptă, fiecare treaptă este
+          o revelație, iar fiecare revelație te apropie de Totalitate.
+        </p>
+      </section>
+    </ZariaLayout>
+  );
+}
