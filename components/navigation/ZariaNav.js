@@ -1,50 +1,10 @@
-export default function ZariaNav() {
+import ZariaNav from "../navigation/ZariaNav";
+
+export default function ZariaLayout({ children }) {
   return (
-    <nav
-      style={{
-        marginBottom: "2rem",
-        paddingBottom: "1rem",
-        borderBottom: "1px solid #333",
-        opacity: 0.85,
-        fontSize: "1rem",
-        letterSpacing: "0.5px"
-      }}
-    >
-      <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-        <li style={{ marginBottom: "0.5rem" }}>
-          <a href="/" style={{ color: "#f5f5f5", textDecoration: "none" }}>
-            🜁 Acasă
-          </a>
-        </li>
-
-        <li style={{ marginBottom: "0.5rem" }}>
-          <a
-            href="/ui/manifest"
-            style={{ color: "#f5f5f5", textDecoration: "none" }}
-          >
-            🜂 Manifest ZARIA
-          </a>
-        </li>
-
-        <li style={{ marginBottom: "0.5rem" }}>
-          <a
-            href="/ui/manifest/layers"
-            style={{ color: "#f5f5f5", textDecoration: "none" }}
-          >
-            🜄 Straturile Arhitecturii
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="/ui/manifest/codex"
-            style={{ color: "#f5f5f5", textDecoration: "none" }}
-          >
-            🜃 Codex ZARIA
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div style={{ padding: "2rem", maxWidth: "800px", margin: "0 auto" }}>
+      <ZariaNav />
+      <main>{children}</main>
+    </div>
   );
 }
-
