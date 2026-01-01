@@ -1,4 +1,5 @@
-import ZariaLayout from "../../../components/layouts/ZariaLayout";
+import ZariaLayout from "../../../../components/layouts/ZariaLayout";
+
 const codexuri = [
   { name: "codex_identity", label: "Codex Identitate", version: "1.1.0" },
   { name: "codex_structure", label: "Codex Structură", version: "1.1.0" },
