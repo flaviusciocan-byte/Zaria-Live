@@ -1,6 +1,5 @@
 import ZariaLayout from "../../../../components/layouts/ZariaLayout";
 
-
 export default function TotalityPage() {
   return (
     <ZariaLayout>
