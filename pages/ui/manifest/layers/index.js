@@ -1,5 +1,4 @@
 import ZariaLayout from "../../../components/layouts/ZariaLayout";
-
 const layers = [
   {
     name: "Stratul Arhitectural",
