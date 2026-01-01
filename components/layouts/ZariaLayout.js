@@ -1,4 +1,5 @@
-export default function ZariaLayout({ children }) {
+import ZariaLayout from "../../../components/layouts/ZariaLayout";
+
   return (
     <div
       style={{
