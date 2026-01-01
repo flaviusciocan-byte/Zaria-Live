@@ -1,15 +1,20 @@
-import ZariaLayout from "../../../components/layouts/ZariaLayout";
+import ZariaNav from "../navigation/ZariaNav";
 
+export default function ZariaLayout({ children }) {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        background: "linear-gradient(to bottom, #0a0a0a, #1a1a1a)",
-        color: "#f5f5f5",
-        padding: "2rem",
-        fontFamily: "serif"
-      }}
-    >
+    <div style={{ minHeight: "100vh", background: "...", color: "...", padding: "...", fontFamily: "serif" }}>
+      <header style={{ ... }}>
+        <h1>⚡️ ZARIA-Live</h1>
+        <p>Manifestul ZARIA V1.1 – Arhitectura Suverană</p>
+      </header>
+      <ZariaNav />
+      <main>{children}</main>
+      <footer style={{ ... }}>
+        © 2023 ZARIA V1.1 – Arhitectura Suverană
+      </footer>
+    </div>
+  );
+}
       <header
        import ZariaNav from "../navigation/ZariaNav";
 
