@@ -2,10 +2,16 @@ export default function handler(req, res) {
   res.status(200).json({
     system: "ZARIA-Live",
     manifest: {
-      essence: "claritate, autonomie, moștenire",
-      architecture: "modulară, agent-based",
-      activation: "poetică, scalabilă, universală",
-      version: "1.1.0"
+      title: "Manifestul ZARIA",
+      purpose: "Activarea clarității, autonomiei și moștenirii",
+      version: "1.1.0",
+      modules: [
+        "manifest",
+        "core",
+        "orchestrator",
+        "agents",
+        "system"
+      ]
     },
     timestamp: new Date().toISOString()
   });
